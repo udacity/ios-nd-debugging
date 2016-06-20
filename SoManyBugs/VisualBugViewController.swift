@@ -46,7 +46,7 @@ class VisualBugViewController: UIViewController {
     // MARK: View Animations
     
     func moveBugsAnimation() {
-        UIView.animateWithDuration(moveDuration) {
+        UIView.animate(withDuration: moveDuration) {
             for bug in self.bugs {
                 let randomPosition = CGPoint(x: CGFloat(arc4random_uniform(UInt32(UInt(self.view.bounds.maxX - bug.frame.size.width))) + UInt32(bug.frame.size.width/2)), y: CGFloat(arc4random_uniform(UInt32(UInt(self.view.bounds.maxY - bug.frame.size.height))) + UInt32(bug.frame.size.height/2)))
                 bug.bounds = CGRect(x: randomPosition.x - bug.frame.size.width/1.5, y: randomPosition.y - bug.frame.size.height/1.5, width: BugFactory.bugSize.width, height: BugFactory.bugSize.height)
@@ -55,7 +55,7 @@ class VisualBugViewController: UIViewController {
     }
     
     func disperseBugsAnimation() {
-        UIView.animateWithDuration(disperseDuration, animations: { () -> Void in
+        UIView.animate(withDuration: disperseDuration, animations: { () -> Void in
             for bug in self.bugs {
                 let offScreenPosition = CGPoint(x: (bug.center.x - self.view.center.x) * -20, y: (bug.center.y - self.view.center.y) * -20)
                 bug.frame = CGRect(x: offScreenPosition.x, y: offScreenPosition.y, width: BugFactory.bugSize.width, height: BugFactory.bugSize.height)
@@ -68,7 +68,7 @@ class VisualBugViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func popToMasterView() {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        let _ = navigationController?.popToRootViewController(animated: true)
     }
 }
 
@@ -76,10 +76,10 @@ class VisualBugViewController: UIViewController {
 
 extension VisualBugViewController {
     override func canBecomeFirstResponder() -> Bool { return true }
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
-        if motion == .MotionShake { disperseBugsAnimation() }
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake { disperseBugsAnimation() }
     }
-    func handleSingleTap(recognizer: UITapGestureRecognizer) { addBugToView() }
+    func handleSingleTap(_ recognizer: UITapGestureRecognizer) { addBugToView() }
 }
 
 
@@ -91,22 +91,22 @@ extension VisualBugViewController {
 
         let singleSquareLength: CGFloat = 10.0
         let squaresInRow = 10
-        let imageSize = CGSizeMake(singleSquareLength * CGFloat(squaresInRow), singleSquareLength * CGFloat(bugs.count / squaresInRow + 1))
+        let imageSize = CGSize(width: singleSquareLength * CGFloat(squaresInRow), height: singleSquareLength * CGFloat(bugs.count / squaresInRow + 1))
 
         UIGraphicsBeginImageContextWithOptions(imageSize, true, 0)
         var x: CGFloat = 0.0
         var y: CGFloat = 0.0
         for bug in bugs {
             bug.tintColor.set()
-            UIRectFill(CGRectMake(x, y, singleSquareLength, singleSquareLength))
+            UIRectFill(CGRect(x: x, y: y, width: singleSquareLength, height: singleSquareLength))
             x += singleSquareLength
             if x > CGFloat(squaresInRow) * singleSquareLength {
                 y += singleSquareLength
                 x = 0.0
             }
         }
-        UIColor.yellowColor().set()
-        UIRectFill(CGRectMake(x, y, singleSquareLength, singleSquareLength))
+        UIColor.yellow().set()
+        UIRectFill(CGRect(x: x, y: y, width: singleSquareLength, height: singleSquareLength))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         

@@ -29,12 +29,12 @@ class BreakpointSettingsViewController: UIViewController {
     
     // MARK: - Actions
     
-    @IBAction func dismissSettingsTouched(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func dismissSettingsTouched(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func bugTypeSelected(sender: UIButton) {
+    @IBAction func bugTypeSelected(_ sender: UIButton) {
         bugFactory.currentBugType = BugFactory.BugType(rawValue: Int(sender.currentTitle!)!)!
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

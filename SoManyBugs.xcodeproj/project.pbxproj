@@ -11,20 +11,20 @@
 		A9407EBA1B9F5EC20053559D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9407EB81B9F5EC20053559D /* Main.storyboard */; };
 		A9407EBC1B9F5EC20053559D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9407EBB1B9F5EC20053559D /* Assets.xcassets */; };
 		A9407EBF1B9F5EC20053559D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9407EBD1B9F5EC20053559D /* LaunchScreen.storyboard */; };
-		A9407ED21B9F61D20053559D /* FinalBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC61B9F61D20053559D /* FinalBugViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407ED31B9F61D20053559D /* BreakpointBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC71B9F61D20053559D /* BreakpointBugViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407ED41B9F61D20053559D /* VisualSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC81B9F61D20053559D /* VisualSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407ED51B9F61D20053559D /* PrintBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC91B9F61D20053559D /* PrintBugViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407ED61B9F61D20053559D /* VisualBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECA1B9F61D20053559D /* VisualBugViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407ED71B9F61D20053559D /* PrintSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECB1B9F61D20053559D /* PrintSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407ED81B9F61D20053559D /* BreakpointSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECC1B9F61D20053559D /* BreakpointSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407ED91B9F61D20053559D /* FinalSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECD1B9F61D20053559D /* FinalSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407EDA1B9F61D20053559D /* BugFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECE1B9F61D20053559D /* BugFactory.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407EDB1B9F61D20053559D /* UIColor+BugTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECF1B9F61D20053559D /* UIColor+BugTheme.swift */; settings = {ASSET_TAGS = (); }; };
-		A9407EE31B9F61E20053559D /* back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EDF1B9F61E20053559D /* back.pdf */; settings = {ASSET_TAGS = (); }; };
-		A9407EE41B9F61E20053559D /* settings.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EE01B9F61E20053559D /* settings.pdf */; settings = {ASSET_TAGS = (); }; };
-		A9407EE51B9F61E20053559D /* spider.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EE11B9F61E20053559D /* spider.pdf */; settings = {ASSET_TAGS = (); }; };
-		A9407EE61B9F61E20053559D /* web.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EE21B9F61E20053559D /* web.pdf */; settings = {ASSET_TAGS = (); }; };
+		A9407ED21B9F61D20053559D /* FinalBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC61B9F61D20053559D /* FinalBugViewController.swift */; };
+		A9407ED31B9F61D20053559D /* BreakpointBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC71B9F61D20053559D /* BreakpointBugViewController.swift */; };
+		A9407ED41B9F61D20053559D /* VisualSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC81B9F61D20053559D /* VisualSettingsViewController.swift */; };
+		A9407ED51B9F61D20053559D /* PrintBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC91B9F61D20053559D /* PrintBugViewController.swift */; };
+		A9407ED61B9F61D20053559D /* VisualBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECA1B9F61D20053559D /* VisualBugViewController.swift */; };
+		A9407ED71B9F61D20053559D /* PrintSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECB1B9F61D20053559D /* PrintSettingsViewController.swift */; };
+		A9407ED81B9F61D20053559D /* BreakpointSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECC1B9F61D20053559D /* BreakpointSettingsViewController.swift */; };
+		A9407ED91B9F61D20053559D /* FinalSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECD1B9F61D20053559D /* FinalSettingsViewController.swift */; };
+		A9407EDA1B9F61D20053559D /* BugFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECE1B9F61D20053559D /* BugFactory.swift */; };
+		A9407EDB1B9F61D20053559D /* UIColor+BugTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407ECF1B9F61D20053559D /* UIColor+BugTheme.swift */; };
+		A9407EE31B9F61E20053559D /* back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EDF1B9F61E20053559D /* back.pdf */; };
+		A9407EE41B9F61E20053559D /* settings.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EE01B9F61E20053559D /* settings.pdf */; };
+		A9407EE51B9F61E20053559D /* spider.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EE11B9F61E20053559D /* spider.pdf */; };
+		A9407EE61B9F61E20053559D /* web.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9407EE21B9F61E20053559D /* web.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,11 +185,12 @@
 		A9407EA91B9F5EC20053559D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Udacity;
 				TargetAttributes = {
 					A9407EB01B9F5EC20053559D = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -360,6 +361,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.SoManyBugs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -371,6 +373,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.SoManyBugs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
