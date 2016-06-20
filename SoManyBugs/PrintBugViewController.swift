@@ -8,26 +8,27 @@
 
 import UIKit
 
+// MARK: - PrintBugViewController: UIViewController
+
 class PrintBugViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: Properties
     
     let bugFactory = BugFactory.sharedInstance()
     let maxBugs = 100
     let moveDuration = 3.0
-    let disperseDuration = 1.0
-    
+    let disperseDuration = 1.0    
     var bugs = [UIImageView]()
 
-    // MARK: - View Events
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()        
-        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
+        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleSingleTap))
         view.addGestureRecognizer(singleTapRecognizer)                
     }
 
-    // MARK: - Bug Functions
+    // MARK: Bug Functions
     
     func addBugToView() {
         if bugs.count < maxBugs {
@@ -44,7 +45,7 @@ class PrintBugViewController: UIViewController {
         self.bugs.removeAll(keepCapacity: true)
     }
     
-    // MARK: - View Animations
+    // MARK: View Animations
     
     func moveBugsAnimation() {
         UIView.animateWithDuration(moveDuration) {
@@ -66,7 +67,7 @@ class PrintBugViewController: UIViewController {
         })
     }
     
-    // MARK: - Actions
+    // MARK: Actions
     
     @IBAction func popToMasterView() {
         self.navigationController?.popToRootViewControllerAnimated(true)

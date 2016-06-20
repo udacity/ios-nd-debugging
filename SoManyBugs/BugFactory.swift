@@ -9,8 +9,12 @@
 import UIKit
 import Foundation
 
+// MARK: - BugFactory
+
 class BugFactory {
-        
+    
+    // MARK: Properties
+    
     static let bugTints = [UIColor.blackColor(), UIColor.brightBlueColor(), UIColor.brightRedColor(), UIColor.brightGreenColor()]
     static let shakeRotations = [M_PI/16, M_PI/8, M_PI/8, M_PI/24]
     static let shakeDurations = [0.3, 3.0, 0.1, 0.5]
@@ -21,6 +25,8 @@ class BugFactory {
     }
     
     var currentBugType = BugType.Basic
+    
+    // MARK: Create Bug
     
     func createBug() -> UIImageView {
         let bug = UIImageView(frame: CGRect(x: -100, y: -100, width: 128, height: 128))
@@ -41,7 +47,7 @@ class BugFactory {
         return bug
     }
     
-    // MARK: - Shared Instance
+    // MARK: Shared Instance
     
     class func sharedInstance() -> BugFactory {
         

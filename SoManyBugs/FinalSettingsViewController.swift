@@ -8,21 +8,26 @@
 
 import UIKit
 
+// MARK: - FinalSettingsViewController: UIViewController
+
 class FinalSettingsViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties
     
     let bugFactory = BugFactory.sharedInstance()
+    
+    // MARK: Outlets
+    
     @IBOutlet weak var currentBugTypeImageView: UIImageView!
     
-    // MARK: - View Events
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         currentBugTypeImageView.tintColor = BugFactory.bugTints[bugFactory.currentBugType.rawValue]
     }
     
-    // MARK: - IBActions
+    // MARK: Actions
     
     @IBAction func dismissSettingsTouched(sender: AnyObject) { self.dismissViewControllerAnimated(true, completion: nil) }
     

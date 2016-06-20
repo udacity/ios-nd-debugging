@@ -8,26 +8,27 @@
 
 import UIKit
 
+// MARK: - VisualBugViewController: UIViewController
+
 class VisualBugViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: Properties
     
     let bugFactory = BugFactory.sharedInstance()
     let maxBugs = 100
     let moveDuration = 3.0
     let disperseDuration = 1.0
-    
     var bugs = [UIImageView]()
 
-    // MARK: - View Events
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()        
-        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
-        view.addGestureRecognizer(singleTapRecognizer)                
+        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleSingleTap))
+        view.addGestureRecognizer(singleTapRecognizer)
     }
 
-    // MARK: - Bug Functions
+    // MARK: Bug Functions
     
     func addBugToView() {
         if bugs.count < maxBugs {
@@ -42,7 +43,7 @@ class VisualBugViewController: UIViewController {
         // TODO: Empty the bugs from view!
     }
     
-    // MARK: - View Animations
+    // MARK: View Animations
     
     func moveBugsAnimation() {
         UIView.animateWithDuration(moveDuration) {
@@ -64,14 +65,14 @@ class VisualBugViewController: UIViewController {
         })
     }
     
-    // MARK: - Actions    
+    // MARK: Actions
     
     @IBAction func popToMasterView() {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
 }
 
-// MARK: - UIResponder
+// MARK: - VisualBugViewController (UIResponder)
 
 extension VisualBugViewController {
     override func canBecomeFirstResponder() -> Bool { return true }
@@ -82,7 +83,7 @@ extension VisualBugViewController {
 }
 
 
-// MARK: - debugQuickLookObject
+// MARK: - VisualBugViewController (debugQuickLookObject)
 
 extension VisualBugViewController {
     

@@ -8,26 +8,27 @@
 
 import UIKit
 
+// MARK: - FinalBugViewController: UIViewController
+
 class FinalBugViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: Properties
     
     let bugFactory = BugFactory.sharedInstance()
     let maxBugs = 100
     let moveDuration = 3.0
-    let disperseDuration = 1.0
-    
+    let disperseDuration = 1.0    
     var bugs = [UIImageView]()
 
-    // MARK: - View Events
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()        
-        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
+        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleSingleTap))
         view.addGestureRecognizer(singleTapRecognizer)                
     }
 
-    // MARK: - Bug Functions
+    // MARK: Bug Functions
     
     func addBugToView() {
         if bugs.count < maxBugs {
@@ -45,7 +46,7 @@ class FinalBugViewController: UIViewController {
         self.bugs.removeAll(keepCapacity: true)
     }
     
-    // MARK: - View Animations
+    // MARK: View Animations
     
     func moveBugsAnimation() {
         UIView.animateWithDuration(moveDuration) {
@@ -67,14 +68,14 @@ class FinalBugViewController: UIViewController {
         })
     }
     
-    // MARK: - Actions
+    // MARK: Actions
     
     @IBAction func popToMasterView() {
         self.navigationController!.popToRootViewControllerAnimated(true)
     }
 }
 
-// MARK: - UIResponder
+// MARK: - FinalBugViewController (UIResponder)
 
 extension FinalBugViewController {
     override func canBecomeFirstResponder() -> Bool { return true }
@@ -84,9 +85,9 @@ extension FinalBugViewController {
     func handleSingleTap(recognizer: UITapGestureRecognizer) { addBugToView() }
 }
 
-// MARK: - CustomStringConvertible
+// MARK: - FinalBugViewController (CustomStringConvertible)
 
-// Note: You don't have to conform to CustomStringConvertible since this is already done by FinalBugViewController's superclasses (via NSObject).
+// NOTE: You don't have to conform to CustomStringConvertible since this is already done by FinalBugViewController's superclasses (via NSObject).
 
 extension FinalBugViewController {
 
@@ -96,9 +97,11 @@ extension FinalBugViewController {
     
 }
 
-// MARK: - CustomDebugStringConvertible
+// MARK: - FinalBugViewController (CustomDebugStringConvertible)
 
-extension FinalBugViewController: CustomDebugStringConvertible {
+// NOTE: You don't have to conform to CustomDebugStringConvertible since this is already done by FinalBugViewController's superclasses (via NSObject).
+
+extension FinalBugViewController {
     
     override var debugDescription: String {
         var index = 0
@@ -111,7 +114,7 @@ extension FinalBugViewController: CustomDebugStringConvertible {
     }
 }
 
-// MARK: - debugQuickLookObject
+// MARK: - FinalBugViewController (debugQuickLookObject)
 
 extension FinalBugViewController {
     
