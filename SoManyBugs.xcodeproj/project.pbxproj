@@ -32,7 +32,6 @@
 		A9407EB41B9F5EC20053559D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9407EB91B9F5EC20053559D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9407EBB1B9F5EC20053559D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A9407EBE1B9F5EC20053559D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9407EC01B9F5EC20053559D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9407EC61B9F61D20053559D /* FinalBugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalBugViewController.swift; sourceTree = "<group>"; };
 		A9407EC71B9F61D20053559D /* BreakpointBugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakpointBugViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		A9407EE01B9F61E20053559D /* settings.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = settings.pdf; path = Images/settings.pdf; sourceTree = "<group>"; };
 		A9407EE11B9F61E20053559D /* spider.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = spider.pdf; path = Images/spider.pdf; sourceTree = "<group>"; };
 		A9407EE21B9F61E20053559D /* web.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = web.pdf; path = Images/web.pdf; sourceTree = "<group>"; };
+		A9E4C7EB1D1AB2AC0070ADD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 			children = (
 				A9407EDE1B9F61D80053559D /* Images */,
 				A9407EB81B9F5EC20053559D /* Main.storyboard */,
-				A9407EBD1B9F5EC20053559D /* LaunchScreen.storyboard */,
+				A9E4C7EA1D1AB2AC0070ADD7 /* LaunchScreen.xib */,
 				A9407EBB1B9F5EC20053559D /* Assets.xcassets */,
 				A9407EC01B9F5EC20053559D /* Info.plist */,
 			);
@@ -217,10 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9407EBF1B9F5EC20053559D /* LaunchScreen.storyboard in Resources */,
 				A9407EE61B9F61E20053559D /* web.pdf in Resources */,
 				A9407EE51B9F61E20053559D /* spider.pdf in Resources */,
 				A9407EE31B9F61E20053559D /* back.pdf in Resources */,
+				A9E4C7EC1D1AB2AC0070ADD7 /* LaunchScreen.xib in Resources */,
 				A9407EBC1B9F5EC20053559D /* Assets.xcassets in Resources */,
 				A9407EBA1B9F5EC20053559D /* Main.storyboard in Resources */,
 				A9407EE41B9F61E20053559D /* settings.pdf in Resources */,
@@ -259,12 +259,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A9407EBD1B9F5EC20053559D /* LaunchScreen.storyboard */ = {
+		A9E4C7EA1D1AB2AC0070ADD7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A9407EBE1B9F5EC20053559D /* Base */,
+				A9E4C7EB1D1AB2AC0070ADD7 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
