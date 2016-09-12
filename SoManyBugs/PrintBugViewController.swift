@@ -77,7 +77,7 @@ class PrintBugViewController: UIViewController {
 // MARK: - UIResponder
 
 extension PrintBugViewController {
-    override func canBecomeFirstResponder() -> Bool { return true }
+    override var canBecomeFirstResponder: Bool { return true }
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake { disperseBugsAnimation() }
     }

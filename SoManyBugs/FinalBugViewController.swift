@@ -78,7 +78,7 @@ class FinalBugViewController: UIViewController {
 // MARK: - FinalBugViewController (UIResponder)
 
 extension FinalBugViewController {
-    override func canBecomeFirstResponder() -> Bool { return true }
+    override var canBecomeFirstResponder: Bool { return true }
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake { disperseBugsAnimation() }
     }
@@ -136,7 +136,7 @@ extension FinalBugViewController {
                 x = 0.0
             }
         }
-        UIColor.yellow().set()
+        UIColor.yellow.set()
         UIRectFill(CGRect(x: x, y: y, width: singleSquareLength, height: singleSquareLength))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
