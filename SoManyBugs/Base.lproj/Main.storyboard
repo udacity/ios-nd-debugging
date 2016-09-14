@@ -96,8 +96,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="U96-wt-gDQ"/>
                                 <exclude reference="I5U-c8-QfF"/>
+                                <exclude reference="U96-wt-gDQ"/>
                             </mask>
                         </variation>
                     </view>
