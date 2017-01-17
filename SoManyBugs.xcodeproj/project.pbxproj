@@ -10,7 +10,6 @@
 		A9407EB51B9F5EC20053559D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EB41B9F5EC20053559D /* AppDelegate.swift */; };
 		A9407EBA1B9F5EC20053559D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9407EB81B9F5EC20053559D /* Main.storyboard */; };
 		A9407EBC1B9F5EC20053559D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9407EBB1B9F5EC20053559D /* Assets.xcassets */; };
-		A9407EBF1B9F5EC20053559D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9407EBD1B9F5EC20053559D /* LaunchScreen.storyboard */; };
 		A9407ED21B9F61D20053559D /* FinalBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC61B9F61D20053559D /* FinalBugViewController.swift */; };
 		A9407ED31B9F61D20053559D /* BreakpointBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC71B9F61D20053559D /* BreakpointBugViewController.swift */; };
 		A9407ED41B9F61D20053559D /* VisualSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407EC81B9F61D20053559D /* VisualSettingsViewController.swift */; };
@@ -185,7 +184,7 @@
 		A9407EA91B9F5EC20053559D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Udacity;
 				TargetAttributes = {
 					A9407EB01B9F5EC20053559D = {
@@ -220,7 +219,6 @@
 				A9407EE61B9F61E20053559D /* web.pdf in Resources */,
 				A9407EE51B9F61E20053559D /* spider.pdf in Resources */,
 				A9407EE31B9F61E20053559D /* back.pdf in Resources */,
-				A9E4C7EC1D1AB2AC0070ADD7 /* LaunchScreen.xib in Resources */,
 				A9407EBC1B9F5EC20053559D /* Assets.xcassets in Resources */,
 				A9407EBA1B9F5EC20053559D /* Main.storyboard in Resources */,
 				A9407EE41B9F61E20053559D /* settings.pdf in Resources */,
@@ -283,8 +281,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -328,8 +328,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
