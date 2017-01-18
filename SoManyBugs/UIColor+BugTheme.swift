@@ -11,7 +11,13 @@ import UIKit
 // MARK: UIColor Extensions
 
 extension UIColor {
-    class func brightRedColor() -> UIColor { return UIColor(red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1.0) }
-    class func brightGreenColor() -> UIColor { return UIColor(red: 76.0/255.0, green: 217.0/255.0, blue: 100.0/255.0, alpha: 1.0) }
-    class func brightBlueColor() -> UIColor { return UIColor(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0) }
+    open class var brightRedColor: UIColor {
+        return UIColor(red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1.0)
+    }
+    open class var brightGreenColor: UIColor {
+        return UIColor(red: 76.0/255.0, green: 217.0/255.0, blue: 100.0/255.0, alpha: 1.0)
+    }
+    open class var brightBlueColor: UIColor {
+        return UIColor(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
+    }
 }
