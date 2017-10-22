@@ -82,7 +82,7 @@ extension FinalBugViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake { disperseBugsAnimation() }
     }
-    func handleSingleTap(_ recognizer: UITapGestureRecognizer) { addBugToView() }
+    @objc func handleSingleTap(_ recognizer: UITapGestureRecognizer) { addBugToView() }
 }
 
 // MARK: - FinalBugViewController (CustomStringConvertible)
