@@ -15,16 +15,16 @@ class BugFactory {
     
     // MARK: Properties
     
-    static let bugTints = [UIColor.blackColor(), UIColor.brightBlueColor(), UIColor.brightRedColor(), UIColor.brightGreenColor()]
-    static let shakeRotations = [M_PI/16, M_PI/8, M_PI/8, M_PI/24]
+    static let bugTints: [UIColor] = [.black, .brightBlueColor, .brightRedColor, .brightGreenColor]
+    static let shakeRotations = [Double.pi/16, Double.pi/8, Double.pi/8, Double.pi/24]
     static let shakeDurations = [0.3, 3.0, 0.1, 0.5]
     static let bugSize = CGSize(width: 128, height: 128)
     
     enum BugType: Int {
-        case Basic, Slow, Fast, Smooth
+        case basic, slow, fast, smooth
     }
     
-    var currentBugType = BugType.Basic
+    var currentBugType = BugType.basic
     
     // MARK: Create Bug
     
@@ -41,8 +41,8 @@ class BugFactory {
         shakeAnimation.duration = BugFactory.shakeDurations[currentBugType.rawValue]
         shakeAnimation.repeatCount = Float.infinity
         shakeAnimation.autoreverses = true
-        shakeAnimation.removedOnCompletion = false
-        bug.layer.addAnimation(shakeAnimation, forKey: "shake")
+        shakeAnimation.isRemovedOnCompletion = false
+        bug.layer.add(shakeAnimation, forKey: "shake")
         
         return bug
     }
